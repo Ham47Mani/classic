@@ -1,0 +1,622 @@
+/* 
+ * Template Name      : Template 2
+ * Template Version   : V 1.0.0
+ * Template Url       : ...
+ * Language           : HTML5, CSS3, jQuery 
+ * Contact Me : Skaype   :- Boudraa.Hamani
+ *				Facebook :- Ham mani
+ *				Email    :- Ham47mani@gmail.com
+ */
+
+/*============= Start Main Rules =============*/
+* {
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+        -ms-box-sizing: border-box;
+         -o-box-sizing: border-box;
+            box-sizing: border-box;
+}
+.container { width: 85%; margin: auto }
+ul { list-style: none; padding: 0; margin: 0 }
+/*============= End Main Rules =============*/
+
+/*============= Start Navbar =============*/
+nav { height: 0; color: #FFF; position: relative; z-index: 2 }
+
+/*------ Brand ------*/
+nav .brand { text-transform: uppercase; width: 50%; margin-top: 10px; float: left }
+nav .brand h2 { font-family: 'Akronim', cursive ; font-size: 30px; margin-top: 5px }
+
+/*------ Links ------*/
+nav .links { width: 50%; float: left; margin-top: 25px; padding-bottom: 10px; }
+nav .links i.fa { cursor: pointer; display: none }
+nav .links ul li { display: inline-block; font-weight: bold; margin: 0 15px }
+nav .links ul li a { text-decoration: none; color: #FFF; padding: 10px 0 }
+nav .links ul .active a, nav .links ul li a:hover {
+    color: #1BBC9D;
+    border-bottom: 2px solid #1BBC9D;
+}
+
+/* ===> Smart Phones And Tablet <===-*/
+@media (max-width: 767px){
+    nav { 
+        position: fixed; 
+        top: 0;
+        left: 0;
+        width: 100vw; 
+        z-index: 999; 
+        height: auto; 
+        background: rgba(0, 0, 0, .7) 
+    }
+    
+    /*------ Brand ------*/
+    nav .brand { width: 30% }
+    nav .brand h2 { font-size: 25px; margin: 0; padding: 0 }
+    
+    /*------ Links ------*/
+    nav .links { position: relative; width: 100%; margin-top: 0; top: -30px }
+    nav .links i.fa { display: block; position: absolute; top: -3px; right: -20px }
+    nav .links ul {
+        display: none;
+        position: absolute;
+        top: 30px;
+        padding-top: 15px;
+        background: rgba(0, 0, 0, .7);
+        width: calc(100vw + 10%);
+        margin-left: -10%;
+        padding-left: 5%;
+    }
+    nav .links ul li, nav .links ul li a { display: block }
+    nav .links ul li a {
+        -webkit-transition: all .5s ease;
+           -moz-transition: all .5s ease;
+            -ms-transition: all .5s ease;
+             -o-transition: all .5s ease;
+                transition: all .5s ease;
+    }
+    nav .links ul .active a, nav .links ul li a:hover {
+        border-bottom: none;
+        background: #1BBC9D;
+        color: #FFF;
+        padding-left: 15px;
+    }
+}
+
+/* ===> Small Screen <===-*/
+@media (min-width: 768px) and (max-width: 991px){
+    nav { 
+        position: fixed; 
+        top: 0;
+        left: 0;
+        width: 100vw; 
+        z-index: 999; 
+        height: auto; 
+        background: rgba(0, 0, 0, .7) 
+    }
+    
+    /*------ Brand ------*/
+    nav .brand { width: 30% }
+    nav .brand h2 { font-size: 25px; margin: 0; padding: 0 }
+    
+    /*------ Links ------*/
+    nav .links { position: relative; width: 100%; margin-top: 0; top: -30px }
+    nav .links i.fa { display: block; position: absolute; top: -3px; right: -20px }
+    nav .links ul {
+        display: none;
+        position: absolute;
+        top: 30px;
+        padding-top: 15px;
+        background: rgba(0, 0, 0, .7);
+        width: calc(100vw + 10%);
+        margin-left: -10%;
+        padding-left: 5%;
+    }
+    nav .links ul li, nav .links ul li a { display: block }
+    nav .links ul li a {
+        -webkit-transition: all .5s ease;
+           -moz-transition: all .5s ease;
+            -ms-transition: all .5s ease;
+             -o-transition: all .5s ease;
+                transition: all .5s ease;
+    }
+    nav .links ul .active a, nav .links ul li a:hover {
+        border-bottom: none;
+        background: #1BBC9D;
+        color: #FFF;
+        padding-left: 15px;
+    }
+}
+
+/* ===> Medium Screen <===-*/
+@media (min-width: 992px) and (max-width: 1199px){}
+
+/* ===> Large Screen <===-*/
+@media (min-width: 1200px){}
+/*============= End Navbar =============*/
+
+/*============= Start Header =============*/
+header {
+    position: relative;
+    background: url('../img/header.jpg');
+    -webkit-background-size: cover;
+       -moz-background-size: cover;
+        -ms-background-size: cover;
+         -o-background-size: cover;
+            background-size: cover;
+}
+header .layer {
+    background-color: rgba(0, 0, 0, .5);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1
+}
+
+/*------ BxSlider ------*/
+header .bx-wrapper { height: 100%; color: #FFF }
+header .bx-wrapper .bx-viewport {
+    box-shadow: none;
+    border: 0;
+    background: none;
+    height: 100% !important;
+    text-align: center
+}
+header .bx-wrapper .bx-viewport .bxslider { height: 100% }
+header .bx-wrapper .bx-viewport .bxslider li { display: block }
+header .bx-wrapper .bx-viewport .bxslider li h2 {
+    font-size: 60px;
+    margin-top: 0;
+    margin-bottom: 15px
+}
+header .bx-wrapper .bx-viewport .bxslider li span { color: #1BBC9D }
+header .bx-wrapper .bx-viewport .bxslider p { font-size: 16px; line-height: 1.4 }
+
+/* ===> Smart Phones And Tablet <===-*/
+@media (max-width: 767px){
+    header .bx-wrapper .bx-viewport .bxslider li h2 { font-size: 30px }
+    header .bx-wrapper .bx-viewport .bxslider p { font-size: 12px }
+}
+/*============= End Header =============*/
+
+/*============= Start Our Services =============*/
+.services { padding: 80px 20px 30px }
+
+/*------ Items ------*/
+.services .items { float: left; width: 33.333%; padding-right: 8px; margin-bottom: 20px }
+.services .items i {
+    color: #1BBC9D;
+    width: 15%;
+    float: left;
+    margin-top: 35px;
+    margin-right: 13%;
+    -webkit-transition: all .7s ease-in-out;
+       -moz-transition: all .7s ease-in-out;
+        -ms-transition: all .7s ease-in-out;
+         -o-transition: all .7s ease-in-out;
+            transition: all .7s ease-in-out
+}
+.services .items:hover i {
+    -webkit-transform: Scale(1.2) rotateZ(360deg);
+       -moz-transform: Scale(1.2) rotateZ(360deg);
+        -ms-transform: Scale(1.2) rotateZ(360deg);
+         -o-transform: Scale(1.2) rotateZ(360deg);
+            transform: Scale(1.2) rotateZ(360deg)
+}
+.services .items .info { width: 72%; float: left }
+.services .items .info h3 { font-weight: normal; color: #2D2D2D; margin-bottom: 10px }
+
+/* ===> Smart Phones And Tablet <===-*/
+@media (max-width: 767px){
+    .services { padding: 40px 0px 20px }
+    
+    /*------ Items ------*/
+    .services .items { float: none; width: 100%; padding-right: 0 }
+    .services .items i { text-align: center }
+}
+
+/* ===> Small Screen <===-*/
+@media (min-width: 768px) and (max-width: 991px){
+    .services { padding: 40px 0px 20px }
+    
+    /*------ Items ------*/
+    .services .items { width: calc(98% / 2); padding-right: 1% }
+    .services .items i { text-align: center }
+}
+/*============= End Our Services =============*/
+
+/*============= Start Our Team =============*/
+.team { margin: 70px 20px }
+
+/*------ Box ------*/
+.team .box { float: left }
+.team .box:first-child { width: 35% }
+.team .box p { padding: 5px 20px 0 0 }
+.team .box:not(:first-child) { position: relative; width: 15.25%; margin-left: 1% }
+.team .box:not(:first-child) .layer {
+    visibility: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    line-height: 180px;
+    font-size: 20px;
+    font-weight: bold;
+    color:#FFF;
+    text-align: center;
+    background-color: rgba(26, 188, 156, .8);
+    border-radius: 50%;
+    -webkit-transition: all .5s ease-in-out;
+       -moz-transition: all .5s ease-in-out;
+        -ms-transition: all .5s ease-in-out;
+         -o-transition: all .5s ease-in-out;
+            transition: all .5s ease-in-out
+}
+.team .box:not(:first-child):hover .layer { visibility: visible; border-radius: 0 }
+.team .box:not(:first-child):hover img { border-radius: 0 }
+.team .box:not(:first-child) img { 
+    width: 100%;
+    border-radius: 50%;
+    -webkit-transition: all .5s ease-in-out;
+       -moz-transition: all .5s ease-in-out;
+        -ms-transition: all .5s ease-in-out;
+         -o-transition: all .5s ease-in-out;
+            transition: all .5s ease-in-out
+}
+
+/* ===> Smart Phones And Tablet <===-*/
+@media (max-width: 767px){
+    .team { margin: 40px 0 20px }
+    
+    /*------ Box ------*/
+    .team .box:first-child { float: none; width: 100% }
+    .team .box:not(:first-child) { width: calc(96% / 2); margin-bottom: 20px }
+}
+
+/* ===> Small Screen <===-*/
+@media (min-width: 768px) and (max-width: 991px){
+    .team { margin: 40px 0 20px }
+    
+    /*------ Box ------*/
+    .team .box:first-child { float: none; width: 100% }
+    .team .box:not(:first-child) { width: calc(96% / 4); margin-bottom: 20px }
+}
+/*============= End Our Team =============*/
+
+/*============= Start Our Testimonials =============*/
+.testmonials {
+    background-image: url('../img/testimonials.jpg');
+    position: relative;
+    text-align:center;
+    padding: 80px 0;
+    -webkit-background-size: cover;
+       -moz-background-size: cover;
+        -ms-background-size: cover;
+         -o-background-size: cover;
+            background-size: cover;
+    height: 400px
+}
+
+.testmonials .layer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    color: #EAEAE8;
+    background-color: rgba(0, 0, 0, .6); 
+    padding: 0 40px
+}
+.testmonials .container h2 { font-weight: normal; font-size: 40px; margin: 80px 0 40px }
+.testmonials .container h2 span { padding-bottom: 10px; border-bottom: 2px solid #FFF }
+.testmonials .container q { color: #EAEAE8; line-height: 1.8 }
+.testmonials .container p { color: #1BBC9D; font-size: 25px; margin: 60px 0 }
+
+/*------ Slider ------*/
+.testmonials .slider  .client { display: none }
+.testmonials .slider .active { display: block }
+
+/* ===> Smart Phones And Tablet <===-*/
+@media (max-width: 767px){
+    .testmonials { padding: 40px 0  0}
+    .testmonials .container h2 { font-size: 30px; margin: 30px 0 45px }
+    .testmonials .container p { margin: 30px 0 0 }
+}
+/*============= End Our Testimonials =============*/
+
+/*============= Start Project =============*/
+.project { padding: 70px 0 }
+
+/*------ Ul Items ------*/
+.project ul li {
+    display: inline-block;
+    padding: 10px 25px;
+    margin: 20px 10px 50px 0;
+    color: #AAA;
+    font-weight: bold;
+    border: 1px solid #AAA;
+    cursor: pointer;
+    -webkit-border-radius: 5px;
+       -moz-border-radius: 5px;
+        -ms-border-radius: 5px;
+         -o-border-radius: 5px;
+            border-radius: 5px
+}
+.project ul .active { background-color: #1BBC9B; border: 1px solid #1BBC9B; color: #FFF }
+
+/*------ Gallery ------*/
+.project .gallery { margin: 30px 0; overflow: hidden }
+.project .gallery .row > div:nth-child(2) { margin: 0 1% 0 1% }
+.project .mix { display: none }
+.project .gallery .row div {
+    position: relative;
+    overflow: hidden;
+    width: 32.666%;
+    float: left;
+    margin-bottom: 15px
+}
+.project .gallery .row div img { width: 100% }
+.project .gallery .row .layer {
+    visibility: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    line-height: 300px;
+    font-size: 20px;
+    font-weight: bold;
+    color:#FFF;
+    text-align: center;
+    background-color: rgba(26, 188, 156, .8)
+}
+.project .gallery .row .layer span { border: 2px solid #FFF; padding: 15px 20px }
+.project .gallery i {  position: absolute; bottom: 10px; right: 10px; color: #FFF; visibility: hidden }
+.project .gallery .row div:hover .layer , .project .gallery .row div:hover i {
+    visibility: visible;
+    -webkit-animation: bounce 1s ease-in-out;
+       -moz-animation: bounce 1s ease-in-out;
+        -ms-animation: bounce 1s ease-in-out;
+         -o-animation: bounce 1s ease-in-out;
+            animation: bounce 1s ease-in-out
+}
+
+/* ===> Smart Phones And Tablet <===-*/
+@media (max-width: 767px){
+    .project { padding: 30px 0 }
+    .project ul li { padding: 8px 15px; margin: 20px 5px 20px 0; font-size: 12px }
+    
+    /*------ Gallery ------*/
+    .project .gallery { margin: 0; overflow: hidden }
+    .project .gallery .row .layer { top: -10px }
+    .project .gallery .row > div:nth-child(2) { margin: 0 }
+    .project .gallery .row div { width: 100%; margin: 10px 0 }
+}
+
+/* ===> Small Screen <===-*/
+@media (min-width: 768px) and (max-width: 991px){
+    .project { padding: 30px 0 }
+    .project ul li { margin-bottom: 30px }
+    
+    /*------ Gallery ------*/
+    .project .gallery { margin: 0; overflow: hidden }
+    .project .gallery .row .layer { font-size: 12px; line-height: inherit }
+    .project .gallery .row .layer span { padding: 10px 20px; margin-top: 25% ; display: inline-block }
+}
+/*============= End Project =============*/
+
+/*============= Start Footer =============*/
+footer { overflow: hidden; padding: 70px 0 40px; background-color: #232323; color: #656565 }
+
+/*------ Section ------*/
+footer section { width: 25%; float: left; margin-bottom: 25px }
+footer section:not(:last-child) { padding-right: 25px }
+footer section h2 { font-weight: normal; margin-bottom: 30px; color: #FEFEFE }
+footer section p  { margin-bottom: 40px; line-height: 1.3 }
+footer section i, footer .Tags span { 
+    padding: 10px 15px; 
+    color: #9D9D9D; 
+    border: 1px solid #9D9D9D; 
+    cursor: pointer
+}
+
+/*------ Tags ------*/
+footer .Tags span { margin: 0 1% 10px 0; display: inline-block; color: #D4D4D4; text-transform: uppercase }
+footer .Tags span:hover, footer section i:hover { background-color: #1BBC9B; color: #FFF }
+
+/*------ Recent ------*/
+footer .Recent div { overflow: hidden; margin-bottom: 10px }
+footer .Recent img  { float: left; margin-right: 3% }
+footer .Recent h4 { margin: 7px 0; font-weight: normal; color: #D4D4D4 }
+
+/*------ Blog ------*/
+footer .Blog ul li {
+    margin: 15px 0;
+    padding-bottom: 10px;
+    color: #D4D4D4;
+    border-bottom: 1px solid #656565
+}
+
+/*------ Copyright ------*/
+footer .Copyright { text-align: center; margin-top: 10px }
+
+/* ===> Smart Phones And Tablet <===-*/
+@media (max-width: 767px){
+    footer { padding: 20px 0 20px }
+    
+    /*------ Section ------*/
+    footer section { width: 100%; float: none; text-align: center }
+    footer .Tags, footer .Recent, footer .Blog { display: none }
+    footer .Copyright { margin-top: 40px}
+}
+
+/* ===> Small Screen <===-*/
+@media (min-width: 768px) and (max-width: 991px){
+    footer { padding: 20px 0 20px }
+    
+    /*------ Section ------*/
+    footer section { width: 100%; float: none; text-align: center }
+    footer .Tags, footer .Recent, footer .Blog { display: none }
+    footer .Copyright { margin-top: 40px}
+}
+/*============= End Footer =============*/
+
+/*============= Start Loading =============*/
+.loading {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0,1);
+    z-index: 99999
+}
+
+.sk-folding-cube { 
+    margin: 200px auto;
+    width: 80px;
+    height: 80px;
+    position: relative;
+    -webkit-transform: rotateZ(45deg);
+            transform: rotateZ(45deg)
+}
+
+.sk-folding-cube .sk-cube {
+    float: left;
+    width: 50%;
+    height: 50%;
+    position: relative;
+    -webkit-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+            transform: scale(1.1)
+}
+.sk-folding-cube .sk-cube:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #1BBC9D;
+    -webkit-animation: sk-foldCubeAngle 2.4s infinite linear both;
+          animation: sk-foldCubeAngle 2.4s infinite linear both;
+    -webkit-transform-origin: 100% 100%;
+      -ms-transform-origin: 100% 100%;
+          transform-origin: 100% 100%;
+}
+.sk-folding-cube .sk-cube2 {
+    -webkit-transform: scale(1.1) rotateZ(90deg);
+          transform: scale(1.1) rotateZ(90deg);
+}
+.sk-folding-cube .sk-cube3 {
+    -webkit-transform: scale(1.1) rotateZ(180deg);
+          transform: scale(1.1) rotateZ(180deg);
+}
+.sk-folding-cube .sk-cube4 {
+    -webkit-transform: scale(1.1) rotateZ(270deg);
+          transform: scale(1.1) rotateZ(270deg);
+}
+.sk-folding-cube .sk-cube2:before {
+    -webkit-animation-delay: 0.3s;
+    animation-delay: 0.3s;
+}
+.sk-folding-cube .sk-cube3:before {
+    -webkit-animation-delay: 0.6s;
+          animation-delay: 0.6s; 
+}
+.sk-folding-cube .sk-cube4:before {
+    -webkit-animation-delay: 0.9s;
+          animation-delay: 0.9s;
+}
+@-webkit-keyframes sk-foldCubeAngle {
+    0%, 10% {
+    -webkit-transform: perspective(140px) rotateX(-180deg);
+            transform: perspective(140px) rotateX(-180deg);
+    opacity: 0; 
+    } 25%, 75% {
+    -webkit-transform: perspective(140px) rotateX(0deg);
+            transform: perspective(140px) rotateX(0deg);
+    opacity: 1; 
+    } 90%, 100% {
+    -webkit-transform: perspective(140px) rotateY(180deg);
+            transform: perspective(140px) rotateY(180deg);
+    opacity: 0; 
+    } 
+}
+
+@keyframes sk-foldCubeAngle {
+    0%, 10% {
+    -webkit-transform: perspective(140px) rotateX(-180deg);
+            transform: perspective(140px) rotateX(-180deg);
+    opacity: 0; 
+    } 25%, 75% {
+    -webkit-transform: perspective(140px) rotateX(0deg);
+            transform: perspective(140px) rotateX(0deg);
+    opacity: 1; 
+    } 90%, 100% {
+    -webkit-transform: perspective(140px) rotateY(180deg);
+            transform: perspective(140px) rotateY(180deg);
+    opacity: 0; 
+    }
+}
+/*============= End Loading =============*/
+
+/*============= Start My Framwork =============*/
+.clearfix { clear: both }
+.spicial-heidding { position: relative }
+.spicial-heidding:after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 35px;
+    left: 0;
+    width: 45px;
+    border-bottom: 2px solid #000;
+}
+.costomiz-heiding { font-weight: normal; color: #2D2D2D; margin: 0 0 30px }
+.costomiz-p { color: #BEBEBE; line-height: 1.5; font-size: 14px; margin-top: 0 }
+.separaiter { border: 1px solid #D5D5D5; margin: 0 20px }
+/*============= End My Framwork =============*/
+
+/*============= Start My Animation =============*/
+
+/*--------------------- four all ---------------*/
+@keyframes bounce {
+    0%{ transform: translateY(40px) }
+    50%{ transform: translateY(-80px) }
+    100%{ transform: translateY(40px) }
+}
+/*--- four Google Chrome ---*/
+@-webkit-keyframes bounce {
+    0%{ -webkit-transform: translateY(40px) }
+    50%{ -webkit-transform: translateY(-80px) }
+    100%{ -webkit-transform: translateY(40px) }
+}
+/*--- four Mozilla ---*/
+@-moz-keyframes bounce {
+    0%{ -moz-transform: translateY(40px) }
+    50%{ -moz-transform: translateY(-80px) }
+    100%{ -moz-transform: translateY(40px) }
+}
+/*--- four Opera ---*/
+@-o-keyframes bounce {
+    0%{ -o-transform: translateY(40px) }
+    50%{ -o-transform: translateY(-80px) }
+    100%{ -o-transform: translateY(40px) }
+}
+/*--- four MicroSoft ---*/
+@-ms-keyframes bounce {
+    0%{ -ms-transform: translateY(40px) }
+    50%{ -ms-transform: translateY(-80px) }
+    100%{ -ms-transform: translateY(40px) }
+}
+/*============= End My Animation =============*/
+
+/*============= Start Fonts =============*/
+@font-face {
+  font-family: 'Akronim';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Akronim'), local('Akronim-Regular'), url(https://fonts.gstatic.com/s/akronim/v5/fJYaXTH6z-iiw8_UeEYH1g.woff) format('woff');
+}
+/*============= End Fonts =============*/
