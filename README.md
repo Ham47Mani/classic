@@ -22,7 +22,7 @@
   <p align="center">
     An awesome & simple HTML template 
     <br />
-    <a href="">View Demo</a>
+    <a href="https://ham47mani.github.io/classic/">View Demo</a>
     ·
     <a href="https://github.com/Ham47Mani/classic/issues">Report Bug</a>
     ·
